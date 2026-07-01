@@ -104,8 +104,15 @@ table {
 
 /* ==== Адаптив HEADER ==== */
 
+@media (max-width: 1260px) {
+  .header__container {
+    width: 1024px;
+  }
+}
+
 /* iPad Pro */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) { */
+@media (max-width: 1084px) {
   .header__container {
     width: 960px;
   }
@@ -117,10 +124,9 @@ table {
   }
 }
 
-/* iPad mini */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .header__container {
-    width: 728px;
+    width: 828px;
   }
 
   .header__menu, .header__button {
@@ -132,10 +138,46 @@ table {
   }
 }
 
+@media (max-width: 868px) {
+  .header__container {
+    width: 728px;
+  }
+}
+
+/* iPad mini */
+@media (max-width: 768px) {
+  .header__container {
+    width: 600px;
+  }
+}
+
+@media (max-width: 640px) {
+  .header__container {
+    width: 460px;
+  }
+
+  .header__logo img {
+    width: 48px;
+    height: 34px;
+  }
+}
+
+@media (max-width: 474px) {
+  .header__container {
+    width: 414px;
+  }
+}
+
 /* iPhone 11 Pro Max */
 @media (max-width: 414px) {
   .header__container {
     width: 374px;
+  }
+}
+
+@media (max-width: 380px) {
+  .header__container {
+    width: 288px;
   }
 }
 
@@ -292,10 +334,71 @@ table {
 
 /* ========= Адаптив FOOTER ========= */
 
-/* iPad Pro */
-@media (max-width: 1024px) {
-  .footer__container {
+/* @media (max-width: 1260px) {
+  .main-container {
+    width: 1024px;
+  }
+}
+@media (max-width: 1084px) {
+  .main-container {
     width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .main-container {
+    width: 828px;
+  }
+}
+@media (max-width: 868px) {
+  .main-container {
+    width: 728px;
+  }
+}
+@media (max-width: 768px) {
+  .main-container {
+    width: 600px;
+  }
+}
+@media (max-width: 640px) {
+  .main-container {
+    width: 460px;
+  }
+}
+@media (max-width: 474px) {
+  .main-container {
+    width: 414px;
+  }
+}
+@media (max-width: 414px) {
+  .main-container {
+    width: 374px;
+  }
+}
+@media (max-width: 380px) {
+  .main-container {
+    width: 288px;
+  }
+}
+@media (max-width: 320px) {
+  .main-container {
+    width: 288px;
+  }
+} */
+
+/* @media (max-width: 1260px) {}
+@media (max-width: 1084px) {}
+@media (max-width: 992px) {}
+@media (max-width: 868px) {}
+@media (max-width: 768px) {}
+@media (max-width: 640px) {}
+@media (max-width: 474px) {}
+@media (max-width: 414px) {}
+@media (max-width: 380px) {}
+@media (max-width: 320px) {} */
+
+@media (max-width: 1260px) {
+  .footer__container {
+    width: 1024px;
   }
 
   .footer__block:first-child {
@@ -304,10 +407,22 @@ table {
   }
 }
 
-/* iPad mini */
-@media (max-width: 768px) {
+/* iPad Pro */
+/* @media (max-width: 1024px) { */
+@media (max-width: 1084px) {
   .footer__container {
-    width: 728px;
+    width: 960px;
+  }
+
+  /* .footer__block:first-child {
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    gap: 20px;
+  } */
+}
+
+@media (max-width: 992px) {
+  .footer__container {
+    width: 828px;
   }
 
   .footer__block:first-child {
@@ -319,19 +434,29 @@ table {
       grid-column-end: 3;
     }
   }
+
+  .footer {
+    margin-top: 59px;
+  }
 }
 
-/* iPhone 11 Pro Max */
-@media (max-width: 414px) {
+@media (max-width: 868px) {
   .footer__container {
-    width: 374px;
+    width: 728px;
+  }
+}
+
+/* iPad mini */
+@media (max-width: 768px) {
+  .footer__container {
+    width: 600px;
   }
 
   .footer__block:first-child {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 111px 106px 1fr;
+    grid-template-rows: 1fr 1fr;
 
-    & > *:nth-child(3) {
+    & > *:nth-child(4) {
       grid-column-start: 1;
       grid-column-end: 3;
     }
@@ -348,6 +473,22 @@ table {
   .footer__subtitle {
     width: 100%;
   }
+}
+
+@media (max-width: 640px) {
+  .footer__container {
+    width: 460px;
+  }
+
+  .footer__block:first-child {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    & > *:nth-child(3) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
 
   .footer__text--middle {
     width: 100%;
@@ -361,6 +502,26 @@ table {
       margin-left: 0px;
       margin-top: 20px;
     }
+  }
+}
+
+@media (max-width: 474px) {
+  .footer__container {
+    width: 414px;
+  }
+}
+
+
+/* iPhone 11 Pro Max */
+@media (max-width: 414px) {
+  .footer__container {
+    width: 374px;
+  }
+}
+
+@media (max-width: 380px) {
+  .footer__container {
+    width: 288px;
   }
 }
 
@@ -384,7 +545,7 @@ main {
 }
 
 .breadcrumbs {
-  display: flex;
+display: flex;
   align-items: center;
   justify-content: flex-start;
   margin-top: 16px;
@@ -426,8 +587,15 @@ h1 {
 
 /* ==== Адаптив ОБЩИЕ СТИЛИ ==== */
 
+@media (max-width: 1260px) {
+  .main-container {
+    width: 1024px;
+  }
+}
+
 /* iPad Pro */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) { */
+@media (max-width: 1084px) {
   .main-container {
     width: 960px;
   }
@@ -437,10 +605,46 @@ h1 {
   }
 }
 
+@media (max-width: 992px) {
+  .main-container {
+    width: 828px;
+  }
+}
+
+@media (max-width: 868px) {
+  .main-container {
+    width: 728px;
+  }
+}
+
 /* iPad mini */
 @media (max-width: 768px) {
   .main-container {
-    width: 728px;
+    width: 600px;
+  }
+}
+
+@media (max-width: 640px) {
+  .main-container {
+    width: 460px;
+  }
+
+  .breadcrumbs {
+    margin-top: 12px;
+
+    span {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+    }
+  }
+    
+}
+
+@media (max-width: 474px) {
+  .main-container {
+    width: 414px;
   }
 }
 
@@ -453,6 +657,12 @@ h1 {
   .blog-title {
     margin-top: 32px;
     margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 380px) {
+  .main-container {
+    width: 288px;
   }
 }
 
@@ -909,7 +1119,7 @@ h1 {
     width: 690px;
   }
 
-  aside {
+  & > aside {
     width: 282px;
   }
 }
@@ -1109,8 +1319,28 @@ h1 {
   justify-content: space-between;
   margin: 24px 0;
 
+  img {
+    flex-shrink: 0;
+  }
+
   .article__text {
     margin-left: 24px;
+  }
+
+  &.article__photot-left-text--vertical {
+    img, picture {
+      width: 282px;
+      height: 380px;
+      flex-shrink: 0;
+    }
+  }
+
+  &.article__photot-left-text--horizontal {
+    img, picture {
+      width: 281px;
+      height: 174px;
+      flex-shrink: 0;
+    }
   }
 }
 
@@ -1197,6 +1427,190 @@ h1 {
   }
 }
 
+/* ========= Адаптив СТАТЬЯ ========= */
+
+@media (max-width: 1084px) {
+  .article-wrapper {
+    article.article {
+      width: 714px;
+
+      & > img, .img-and-subtitle img {
+        width: 714px;
+        height: 331px;
+      }
+    }
+  }
+
+  .article__contents {
+    .article__list {
+      & > li:nth-child(2), li:nth-child(3) {
+        display: none;
+      }
+
+      & > li:last-child {
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .article-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    article.article {
+      width: 100%;
+    }
+  }
+
+  .article__photot-left-text.article__photot-left-text--vertical {
+    img {
+      width: 290px;
+      height: 380px;
+    }
+  }
+
+  .article__photot-left-text.article__photot-left-text--horizontal {
+    img {
+      width: 294px;
+      height: 182px;
+    }
+  }
+
+  .article__vertical-text {
+    width: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .article__excerpt {
+    width: 100%;
+    span {
+      width: 80%;
+    }
+  }
+
+  .article__photot-left-text.article__photot-left-text--vertical {
+    img, picture {
+      width: 294px;
+      height: 380px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .article-wrapper {
+    margin-top: 32px;
+
+    & article.article {
+      & > img, .img-and-subtitle img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .article__title {
+    margin-bottom: 8px;
+  }
+
+  .article__author {
+    margin-bottom: 16px;
+  }
+
+  .article__excerpt {
+    height: auto;
+    padding-top: 20px;
+
+    span {
+      height: auto;
+    }
+  }
+
+  .article__photot-left-text {
+    flex-direction: column;
+
+    .article__text {
+      margin-left: 0px;
+      margin-top: 16px;
+    }
+  }
+
+  .article__photot-left-text.article__photot-left-text--vertical {
+    img, picture {
+      width: 374px;
+      height: 380px;
+    }
+  }
+
+  .article__photot-left-text.article__photot-left-text--horizontal {
+    img, picture {
+      width: 374px;
+      height: 207px;
+    }
+  }
+
+}
+
+@media (max-width: 474px) {
+  .article__vertical-text-wrapper {
+    flex-direction: column;
+  }
+
+  .article__vertical-text {
+    width: 100%;
+
+    & + .article__vertical-text {
+      margin-left: 0px;
+      margin-top: 24px;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .article-wrapper {
+    & article.article {
+      & > img, .img-and-subtitle img {
+        height: 166px;
+      }
+    }
+  }
+
+  .article__excerpt {
+    padding-top: 0px;
+  }
+
+  .article__excerpt {
+    span {
+      width: 100%;
+    }
+  }
+
+  .article__photot-left-text.article__photot-left-text--vertical,
+  .article__photot-left-text.article__photot-left-text--horizontal {
+    img, picture {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
 /* ======== ПРАВАЯ КОЛОНКА В СТАТЬЕ ========= */
 
 .mock-card {
@@ -1210,7 +1624,8 @@ h1 {
   padding: 0 12px;
 
   button {
-    width: 234px;
+    /* width: 234px; */
+    width: 100%;
     height: 48px;
     color: #ffffff;
     font-size: 16px;
@@ -1253,7 +1668,8 @@ h1 {
   box-shadow: 0px 30px 50px 0px #eff5fb;
 
   & > button {
-    width: 250px;
+    /* width: 250px; */
+    width: 100%;
     height: 48px;
     padding: 12px 16px 12px 16px;
     border-radius: 4px;
@@ -1397,7 +1813,7 @@ h1 {
     margin-top: 16px;
   }
 
-  img {
+  img, picture {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -1423,6 +1839,168 @@ h1 {
   letter-spacing: 0%;
   text-align: left;
   margin-top: 16px;
+}
+
+/* ======== Адаптив ПРАВАЯ КОЛОНКА В СТАТЬЕ ========= */
+
+@media (max-width: 1084px) {
+  .article-wrapper {
+    & > aside {
+      width: 222px;
+    }
+  }
+
+  .additional {
+    & > *:not(:first-child) {
+      margin-top: 24px;
+    }
+  }
+
+  .adv {
+    img {
+      width: 86px;
+      height: 98px;
+    }
+  }
+
+  .article__tags {
+    display: none;
+  }
+
+  .feedback {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .article-wrapper {
+    & > aside {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 248px;
+      row-gap: 36px;
+      column-gap: 16px;
+      width: 100%;
+    }
+  }
+
+  .additional {
+    & > *:not(:first-child) {
+      margin-top: 0px;
+    }
+  }
+
+  .additional__banner {
+    width: 100%;
+    height: 248px;
+
+    img, picture {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .mock-card img {
+    margin: 0 auto;
+  }
+
+  .adv {
+    overflow: hidden;
+    padding: 24px 21px 4px;
+
+    img, picture {
+      width: 166px;
+      height: 133px;
+      right: 12px;
+      bottom: -25px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .adv {
+    img, picture {
+      right: -4px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .adv {
+    img, picture {
+      right: -4px;
+      width: 90px;
+      height: 106px;
+    }
+  }
+}
+
+@media (max-width: 474px) {
+  .article-wrapper {
+    & > aside {
+      grid-template-columns: 1fr;
+      grid-template-rows: 512px 481px 292px 246px;
+      row-gap: 24px;
+    }
+  }
+
+  .mock-card {
+    height: 512px;
+    padding: 24px 32px 44px;
+  }
+
+  .recommendation {
+    height: 481px;
+    padding: 24px 62px 36px;
+  }
+
+  .recommendation__info {
+    .filter-list--card-tags > ul {
+      left: -44px;
+    }
+  }
+
+  .additional__banner {
+    height: 292px;
+  }
+
+  .adv {
+    img, picture {
+      right: 10px;
+      bottom: -36px;
+      width: 200px;
+      height: 160px;
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .adv {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 380px) {
+  
+
+  .recommendation {
+    padding: 24px 20px 36px;
+  }
+
+  .recommendation__info {
+    .filter-list--card-tags > ul {
+      left: 0px;
+    }
+  }
+
+  .adv {
+    img, picture {
+      right: 0px;
+      bottom: -26px;
+      width: 150px;
+      height: 138px;
+    }
+  }
 }
 
 /* ======== ОБРАТНАЯ СВЯЗЬ ========= */
